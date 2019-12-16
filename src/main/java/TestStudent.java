@@ -23,9 +23,21 @@ public class TestStudent {
         
         //instanciate Object
         GraduateStudent tu = new GraduateStudent();
-        tu.studyLevel = "Y 2";
+        tu.studyLevel = "Year 2";
         tu.thesisAdviser = "Dr.Pom";
         tu.thesisExamination();
         tu.oralExamination();
+        tu.studentId = "XXXXXXXXX";
+        tu.studentName = "Unknow to know";
+        tu.faculty = "Unknow";
+        tu.major = "Non of Major";
+        System.out.println("Object = "+tu);
+        tu.showData();
+        tu.showDataGraduate();
+        tu.addCourse();
+        tu.dropCourse();
+        tu.enrollment();
+        tu.payment();
+        tu.line();
     }
 }//end class

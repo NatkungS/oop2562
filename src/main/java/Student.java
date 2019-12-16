@@ -18,7 +18,7 @@ public class Student {
         System.out.println("Name : "+studentName);
         System.out.println("Major : "+major);
         System.out.println("Faculty : "+faculty);
-    }
+    } 
     public void line(){
         System.out.println("==============");
     }
