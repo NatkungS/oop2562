@@ -1,9 +1,11 @@
 package Chap4;
 
-public class SaleMan{
+public class SaleMan {
+
     private String id, name, surname;
     private int saleClass;
     private double saleTotal;
+    private double commission;
 
     public String getId() {
         return id;
@@ -23,6 +25,10 @@ public class SaleMan{
 
     public double getSaleTotal() {
         return saleTotal;
+    }
+
+    public double getCommission() {
+        return commission;
     }
 
     public void setId(String id) {
@@ -45,4 +51,7 @@ public class SaleMan{
         this.saleTotal = saleTotal;
     }
 
+    public void setCommission(double commission) {
+        this.commission = commission;
+    }
 }
