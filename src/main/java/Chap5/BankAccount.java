@@ -1,6 +1,7 @@
 package Chap5;
 
 public class BankAccount {
+
     private int accountNO;
     private String accountName;
     private double balance;
@@ -34,19 +35,21 @@ public class BankAccount {
     public void setBalance(double balance) {
         this.balance = balance;
     }
-    
-    public void deposit(double amount){
-        
-    }   
-    
-    public void withdraw(double amount){
-        
+
+    public void deposit(double amount) {
+        System.out.println("Deposit Amount : " + amount);
+        balance = balance + amount;
+        System.out.println("Balance After Deposit : " + getBalance());
     }
-    
-    public void printDetails(){
-        
+
+    public void withdraw(double amount) {
+        System.out.println("Withdraw Amount : " + amount);
+        balance = balance - amount;
+        System.out.println("Balance After Withdraw : " + getBalance());
     }
-    
-   
-    
+
+    public void printDetails() {
+
+    }
+
 }

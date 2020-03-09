@@ -1,14 +1,30 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Chap5;
 
-/**
- *
- * @author natku
- */
-public class FixedDepositAccount {
-    
+public class FixedDepositAccount extends BankAccount {
+
+    private FixedDepositAccount(int accountNO, String accountName, double balance) {
+        super(accountNO, accountName, balance);
+    }
+
+    public static FixedDepositAccount createFA(int accountNO, String accountName, double balance) {
+        if (balance >= 1000) {
+            return new FixedDepositAccount(accountNO, accountName, balance);
+        } else {
+            return null;
+        }
+    }
+
+    @Override
+    public void deposit(double amount) {
+        System.out.println(" FA Deposit Amount : " + amount);
+        if (amount >= 500) {
+            System.out.println("Balance After Deposit : " + amount);
+            setBalance(amount);
+
+        } else {
+            System.out.println("Can't Deposit : " + amount +"it's below 500 Bath");
+        }
+
+    }
+
 }
