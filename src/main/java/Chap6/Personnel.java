@@ -7,8 +7,8 @@ public class Personnel {
     void printName() {
         System.out.println("I'm " + name + ".");
     }
-    void getAddress()
-    {
+
+    void getAddress() {
         System.out.println("I live in Bangkok.");
     }
 
@@ -22,7 +22,8 @@ class Manager extends Personnel {
     void printName() {
         System.out.println("I'm " + name + ".");
     }
-    void getDepartment(){
+
+    void getDepartment() {
         System.out.println("I work in the accounting department.");
     }
 

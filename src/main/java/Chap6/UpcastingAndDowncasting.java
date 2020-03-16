@@ -6,12 +6,12 @@ public class UpcastingAndDowncasting {
         for (int i = 0; i < person.length; i++) {
             person[i].printName();
             person[i].getAddress();
-            if(person[i] instanceof Manager){
+            if (person[i] instanceof Manager) {
                 /*Manager man = (Manager) person[i];
                 man.getDepartment();*/
                 ((Manager) person[i]).getDepartment();
             }
-            
+
         }
     }
 
@@ -21,5 +21,5 @@ public class UpcastingAndDowncasting {
         psArr[1] = new Personnel();
         display(psArr);
     }
-    
+
 }
